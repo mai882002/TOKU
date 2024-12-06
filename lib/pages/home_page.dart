@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
         title: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Letters(letter: 'T', color: Colors.amber),
+            Letters(letter: 'T', color: Colors.deepOrange),
             Letters(letter: 'O', color: Colors.green),
             Letters(letter: 'K', color: Colors.purpleAccent),
             Letters(letter: 'U', color: Colors.blue),
