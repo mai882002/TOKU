@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color(0xffeeaeca),
+        backgroundColor: const Color(0xffFFBED4),
         elevation: 0,
         centerTitle: true,
         title: const Row(
@@ -94,8 +94,8 @@ class HomePage extends StatelessWidget {
                   imgPadding: 20,
                   textPadding: 20,
                   height: MediaQuery.sizeOf(context).height / 3,
-                  textColor: const Color.fromARGB(255, 252, 85, 140),
-                  img: 'assets/images/1.jpg',
+                  textColor: const Color(0xffc77373),
+                  img: 'assets/images/phrases.jpg',
                   text: 'Phrases',
                   backgroundColor: Color(0xfffce9e2),
                   onTap: () {

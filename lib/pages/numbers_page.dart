@@ -77,7 +77,7 @@ class NumbersPage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Letters(letter: 'N', color: Colors.amber),
+            Letters(letter: 'N', color: Colors.orange),
             Letters(letter: 'U', color: Colors.green),
             Letters(letter: 'M', color: Colors.purpleAccent),
             Letters(letter: 'B', color: Colors.blue),
@@ -86,6 +86,18 @@ class NumbersPage extends StatelessWidget {
             Letters(letter: 'S', color: Colors.teal),
           ],
         ),
+        backgroundColor: Colors.transparent,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color(0xffFFBED4),
+                Color(0xffA6C1FF),
+              ],
+            ),
+          ),
+        ),
+        elevation: 0,
       ),
       body: CustomScrollView(
         slivers: [

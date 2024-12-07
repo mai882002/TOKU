@@ -64,7 +64,7 @@ class PhrasesPage extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Letters(letter: 'P', color: Colors.amber),
+            Letters(letter: 'P', color: Colors.orange),
             Letters(letter: 'H', color: Colors.green),
             Letters(letter: 'R', color: Colors.purpleAccent),
             Letters(letter: 'A', color: Colors.blue),
@@ -73,11 +73,23 @@ class PhrasesPage extends StatelessWidget {
             Letters(letter: 'S', color: Colors.teal),
           ],
         ),
+        backgroundColor: Colors.transparent,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color(0xffFFBED4),
+                Color(0xffA6C1FF),
+              ],
+            ),
+          ),
+        ),
+        elevation: 0,
       ),
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: Image.asset('assets/images/1.jpg'),
+            child: Image.asset('assets/images/phrases.jpg'),
           ),
           SliverList(
             delegate: SliverChildBuilderDelegate(

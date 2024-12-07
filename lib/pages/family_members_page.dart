@@ -73,12 +73,24 @@ class FamilyMembersPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color(0xffFFBED4),
+                Color(0xffA6C1FF),
+              ],
+            ),
+          ),
+        ),
+        elevation: 0,
         centerTitle: true,
         title: const Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Letters(letter: 'F', color: Colors.amber),
+            Letters(letter: 'F', color: Colors.orange),
             Letters(letter: 'A', color: Colors.green),
             Letters(letter: 'M', color: Colors.purpleAccent),
             Letters(letter: 'I', color: Colors.blue),

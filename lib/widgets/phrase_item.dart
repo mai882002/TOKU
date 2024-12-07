@@ -52,7 +52,9 @@ class _PhraseItemState extends State<PhraseItem> {
                 height: 50,
                 width: MediaQuery.sizeOf(context).width - 80,
                 fit: BoxFit.fill,
-                color: isPressed ? Colors.red : Colors.red.withOpacity(0.5) ,
+                color: isPressed
+                    ? Color(0xffc77373)
+                    : Color(0xffc77373).withOpacity(0.5),
               ),
               IconButton(
                 onPressed: () async {
@@ -64,7 +66,7 @@ class _PhraseItemState extends State<PhraseItem> {
                 icon: Container(
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(50),
-                      color: Colors.red),
+                      color: Color(0xffc77373)),
                   child: const Padding(
                     padding: EdgeInsets.all(8.0),
                     child: Icon(

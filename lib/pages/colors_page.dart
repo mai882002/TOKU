@@ -62,18 +62,29 @@ class ColorsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
         centerTitle: true,
         title: const Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Letters(letter: 'C', color: Colors.amber),
+            Letters(letter: 'C', color: Colors.orange),
             Letters(letter: 'O', color: Colors.green),
             Letters(letter: 'L', color: Colors.purpleAccent),
             Letters(letter: 'O', color: Colors.blue),
             Letters(letter: 'R', color: Colors.amber),
             Letters(letter: 'S', color: Colors.green),
           ],
+        ),
+        flexibleSpace: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color(0xffFFBED4),
+                Color(0xffA6C1FF),
+              ],
+            ),
+          ),
         ),
       ),
       body: CustomScrollView(
